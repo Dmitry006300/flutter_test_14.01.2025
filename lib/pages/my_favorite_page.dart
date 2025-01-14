@@ -47,7 +47,8 @@ class FavoriteProductsPage extends StatelessWidget {
                   ),
                   child: ListTile(
                     contentPadding: const EdgeInsets.all(16.0),
-                    title: Text(product.name, style: const TextStyle(fontSize: 18.0)),
+                    title: Text(product.name,
+                        style: const TextStyle(fontSize: 18.0)),
                     subtitle: Text(
                       '${product.price.toStringAsFixed(2)} руб.',
                       style: TextStyle(color: Colors.grey[600]),

@@ -7,7 +7,7 @@ part of 'product.model.dart';
 // **************************************************************************
 
 ProductModel _$ProductModelFromJson(Map<String, dynamic> json) => ProductModel(
-      id: (json['id'] as num).toString(),
+      id: json['id'] as String,
       deleted: json['deleted'] as bool? ?? false,
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
